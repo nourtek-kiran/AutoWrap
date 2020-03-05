@@ -40,6 +40,7 @@ public class AddContractorPackage
 			driver.get("https://beta.wrapportal.com/");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
+			//code we use for the jmeter
 			/*JUnitSampler junitSampler = new JUnitSampler();
 			String UserName = junitSampler.getThreadContext().getVariables().get("username");// pass
 			String Password = junitSampler.getThreadContext().getVariables().get("pass");
@@ -48,7 +49,7 @@ public class AddContractorPackage
 			driver.findElement(By.id("txtPassword")).sendKeys(Password);*/
 
 			driver.findElement(By.id("txtUserName")).sendKeys("demotest2");
-			driver.findElement(By.id("txtPassword")).sendKeys("NOUR5uccess#1");
+			driver.findElement(By.id("txtPassword")).sendKeys("NOUR5");
 
 			driver.findElement(By.xpath("//a[text()='Login']")).click();
 			Thread.sleep(3000);
