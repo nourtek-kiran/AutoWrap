@@ -20,7 +20,7 @@ public class AddContractorPackage
 	public String ContractorName="Sony 1";
 	public String ContactName="jonty rod";
 	public String EnrollmentType="WC & GL";
-	public String TradeName="541310";
+	public String tradeNm="541310";
 	
 	
 /*	public String programName="ABC Project";
@@ -40,15 +40,15 @@ public class AddContractorPackage
 			driver.get("https://beta.wrapportal.com/");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-			JUnitSampler junitSampler = new JUnitSampler();
+			/*JUnitSampler junitSampler = new JUnitSampler();
 			String UserName = junitSampler.getThreadContext().getVariables().get("username");// pass
 			String Password = junitSampler.getThreadContext().getVariables().get("pass");
 			String tradeNm= junitSampler.getThreadContext().getVariables().get("trade");
 			driver.findElement(By.id("txtUserName")).sendKeys(UserName);
-			driver.findElement(By.id("txtPassword")).sendKeys(Password);
+			driver.findElement(By.id("txtPassword")).sendKeys(Password);*/
 
-//			driver.findElement(By.id("txtUserName")).sendKeys("demotest2");
-//			driver.findElement(By.id("txtPassword")).sendKeys("NOUR5uccess#1");
+			driver.findElement(By.id("txtUserName")).sendKeys("demotest2");
+			driver.findElement(By.id("txtPassword")).sendKeys("NOUR5uccess#1");
 
 			driver.findElement(By.xpath("//a[text()='Login']")).click();
 			Thread.sleep(3000);
